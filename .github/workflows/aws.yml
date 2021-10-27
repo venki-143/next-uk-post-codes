@@ -88,6 +88,6 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: venki-next-uk-post-codes-cluster
+        service: venki-next-uk-post-codes-service
         cluster: venki-next-uk-post-codes-cluster 
         wait-for-service-stability: true
